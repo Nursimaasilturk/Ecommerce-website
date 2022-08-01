@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;400;800&family=Edu+SA+Beginner:wght@400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;400;800&family=Edu+SA+Beginner:wght@400;500;600;700&family=Great+Vibes&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header Start */
+.space {
+  margin: 3rem 0rem 3rem 0rem;
+}
+header {
+  width: 100%;
+  height: 13vh;
+  background-color: rgb(94, 241, 170);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.categories ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categories ul li {
+  list-style: none;
+  padding: 2rem;
+}
+.categories ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(1, 1, 26);
+}
+.categories ul li a:hover,
+.categories ul li a.active {
+  color: white;
+  transition: 0.4s ease;
+}
+.categories ul li a.active::after,
+.categories ul li a:hover::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -4px;
+  left: 3%;
+}
+header .logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(36, 85, 50);
+}
+#hero {
+  background-image: url("./img/feature/eye-for-ebony-N37if_OpluQ-unsplash.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 0 right 40%;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: aliceblue;
+  padding: 1rem;
+}
+#hero h4 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+#hero h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+#hero h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+#hero p {
+  font-weight: 200;
+}
+#hero button {
+  margin: 1rem;
+  width: 10%;
+  height: 7%;
+  border: 3px solid rgb(75, 151, 115);
+  border-radius: 0.8rem;
+  background-color: transparent;
+  color: white;
+}
+#hero button:hover {
+  background-color: white;
+  border: none;
+  color: rgb(75, 151, 115);
+  transition: 0.8s ease-in-out;
+}
+#feature {
+  width: 97%;
+  height: 35vh;
+  margin: 2rem 1rem 5rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#feature .fe-box {
+  width: 15%;
+  height: 90%;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: 20px 20px 34px rgb(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+}
+#feature .fe-box img {
+  z-index: -1;
+  width: 100%;
+  height: 80%;
+}
+#feature .fe-box:hover {
+  box-shadow: 10px 10px 54px rgb(70, 62, 221, 0.2);
+}
+#feature .fe-box h6 {
+  display: inline-block;
+  width: 70%;
+  margin: auto;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding: 0.5rem;
+  line-height: 1;
+  border-radius: 0.3rem;
+  color: rgb(75, 151, 115);
+  background-color: rgb(234, 196, 183);
+}
+#feature .fe-box:nth-child(2) h6 {
+  background-color: rgb(205, 248, 141);
+}
+#feature .fe-box:nth-child(3) h6 {
+  background-color: rgb(248, 245, 141);
+}
+#feature .fe-box:nth-child(4) h6 {
+  background-color: rgb(141, 191, 248);
+}
+#feature .fe-box:nth-child(5) h6 {
+  background-color: rgb(205, 141, 248);
+}
+#fe-products {
+  width: 90%;
+  height: auto;
+  margin: 1rem auto;
+  text-align: center;
+}
+#fe-products .pro-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+#fe-products h2 {
+  font-size: 3rem;
+}
+#fe-products p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+#fe-products .pro {
+  width: 23%;
+  max-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
+  margin: 1rem 0.5rem;
+  transition: 0.3 ease;
+  position: relative;
+}
+#fe-products .pro:hover {
+  box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.07);
+}
+#fe-products .pro img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+#fe-products .pro .pro-desc {
+  text-align: start;
+  padding: 1rem 0;
+}
+#fe-products .pro .pro-desc .brand-name {
+  font-size: 0.7rem;
+  color: rgb(75, 151, 115);
+}
+#fe-products .pro .pro-desc h5 {
+  font-size: 1.1rem;
+  color: rgb(13, 22, 22);
+  padding-top: 0.5rem;
+}
+#fe-products .pro .pro-desc span {
+  font-size: 0.8rem;
+  color: greenyellow;
+}
+#fe-products .pro .pro-desc h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(225, 201, 63);
+}
+#fe-products .pro .pro-card .card {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: #eefff1;
+  border-radius: 2rem;
+  font-weight: 500;
+  color: rgb(75, 151, 115);
+  border: 1px solid #d2fada;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("./img/banner/banner.jpg");
+  width: 100%;
+  height: 50vh;
+  background-position: top 35% right 0;
+  background-size: cover;
+}
+#banner h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#banner h2 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+#banner h2 span {
+  font-weight: 400;
+  color: darkorange;
+}
+#banner button {
+  width: 15%;
+  height: 15%;
+  font-weight: 500;
+  border: none;
+  background-color: white;
+  border-radius: 0.3rem;
+  color: darkorange;
+  cursor: pointer;
+  outline: none;
+}
+#banner button:hover {
+  color: white;
+  background-color: darkorange;
+  transition: 00.4s ease-in-out;
+}
+#sm-banner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("./img/banner/banner-2.jpg");
+  min-width: 580px;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  padding: 1.5rem;
+}
+#sm-banner .banner-box.box-2 {
+  background-image: url("./img/banner/banner-3.jpg");
+}
+#sm-banner h4 {
+  font-weight: 200;
+  color: white;
+}
+#sm-banner h2 {
+  padding-top: 0.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+  color: white;
+}
+#sm-banner span {
+  padding-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+}
+#sm-banner button {
+  margin-top: 1rem;
+  width: 25%;
+  height: 13%;
+  background-color: transparent;
+  border: 2px solid white;
+  color: purple;
+  cursor: pointer;
+}
+#sm-banner .box-2 button {
+  color: red;
+}
+#sm-banner button:hover {
+  background-color: purple;
+  border: 2px solid purple;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+#sm-banner .box-2 button:hover {
+  background-color: red;
+  border: 2px solid red;
+  color: white;
+}
+#text-banner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+#text-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("./img/banner/banner-6.jpg");
+  background-color: black;
+  opacity: 0.9;
+  min-width: 30%;
+  height: 30vh;
+  background-position: top 0;
+  background-size: cover;
+  padding: 1.5rem;
+}
+#text-banner .banner-box.box-2 {
+  background-image: url("./img/banner/banner-1.jpg");
+}
+#text-banner .banner-box.box-3 {
+  background-image: url("./img/banner/banner-5.jpg");
+}
+#text-banner .banner-box h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+#text-banner .banner-box h3 {
+  color: #fff;
+  font-weight: 200;
+}
+#newsletter {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1008%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(2%2c 156%2c 252%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c438.743C86.992%2c449.596%2c173.367%2c429.667%2c253.959%2c395.168C346.209%2c355.678%2c465.328%2c322.045%2c495.891%2c226.466C526.976%2c129.254%2c413.578%2c43.646%2c398.647%2c-57.317C383.812%2c-157.631%2c478.92%2c-280.889%2c409.876%2c-355.159C339.98%2c-430.346%2c209.879%2c-353.423%2c108.48%2c-369.448C25.093%2c-382.627%2c-46.45%2c-456.562%2c-129.305%2c-440.371C-213.684%2c-423.882%2c-273.702%2c-350.87%2c-327.942%2c-284.164C-380.861%2c-219.084%2c-435.389%2c-146.614%2c-436.367%2c-62.74C-437.312%2c18.36%2c-372.186%2c81.062%2c-333.028%2c152.089C-297.174%2c217.123%2c-272.543%2c288.058%2c-216.259%2c336.505C-154.578%2c389.597%2c-80.758%2c428.668%2c0%2c438.743' fill='%23027dca'%3e%3c/path%3e%3cpath d='M1440 1098.271C1542.715 1087.893 1642.225 1065.462 1731.287 1013.251 1823.1109999999999 959.4200000000001 1905.357 889.26 1956.1190000000001 795.704 2009.068 698.116 2061.235 580.337 2022.6660000000002 476.225 1984.259 372.55 1838.214 361.222 1764.6019999999999 278.731 1692.7 198.156 1697.725 57.10300000000001 1602.7649999999999 5.673999999999978 1506.275-46.583999999999946 1374.579-39.841999999999985 1280.414 16.499000000000024 1189.087 71.142 1189.833 203.038 1128.057 289.7 1074.509 364.82 974.625 401.699 943.836 488.66200000000003 910.501 582.816 926.819 685.884 953.7370000000001 782.069 984.201 890.9259999999999 1013.495 1014.575 1108.26 1076.1979999999999 1203.09 1137.863 1327.4569999999999 1109.642 1440 1098.271' fill='%2333b0fd'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1008'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  background-position: top 0;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+#newsletter .news-text h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+#newsletter .news-text p {
+  color: black;
+  font-weight: 200;
+}
+#newsletter .news-text p span {
+  color: goldenrod;
+}
+#newsletter .form {
+  width: 40%;
+  display: flex;
+}
+#newsletter input {
+  width: 100%;
+  height: 3rem;
+  padding-left: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.4rem;
+  outline: none;
+  color: rgb(2, 2, 49);
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+#newsletter input::placeholder {
+  opacity: 0.4;
+}
+#newsletter button {
+  width: 30%;
+  height: 3rem;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  cursor: pointer;
+  color: white;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
