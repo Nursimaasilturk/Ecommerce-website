@@ -18,6 +18,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
   </head>
   <body>
     <header>
@@ -29,12 +37,21 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li>
+          <li id="shopping">
             <a href="card.html"
               ><span class="material-symbols-outlined"> shopping_cart </span></a
             >
           </li>
+          <a href="#" id="close">
+            <span class="material-symbols-outlined"> close </span>
+          </a>
         </ul>
+      </div>
+      <div id="mobile">
+        <a href="card.html"
+          ><span class="material-symbols-outlined">shopping_cart </span></a
+        >
+        <span id="bar" class="material-symbols-outlined"> menu </span>
       </div>
     </header>
     <section id="hero">
@@ -496,7 +513,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col second">
         <h4>About</h4>
         <a href="#">About Us</a>
         <a href="#">Delivery Information</a>
@@ -513,18 +530,23 @@
         <a href="#">Help</a>
       </div>
       <div class="col install">
-        <h4>Install App</h4>
-        <p>From App Store or Google Play</p>
-        <div class="row">
-          <img src="./img/pics/app.jpg" alt="app-store" />
-          <img src="./img/pics/play.jpg" alt="play-store" />
+        <div class="payments">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="apps">
+            <img src="./img/pics/app.jpg" alt="app-store" />
+            <img src="./img/pics/play.jpg" alt="play-store" />
+          </div>
         </div>
-        <p>Secured Payment Gateways</p>
-        <img src="./img/pics/payment.jpg" alt="payment" />
+        <div class="payments">
+          <p>Secured Payment Gateways</p>
+          <img src="./img/pics/payment.jpg" alt="payment" />
+        </div>
       </div>
       <div class="copyright">
         <p>&copy;2022-Fedsima / HTML CSS JS Ecommerce Template</p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

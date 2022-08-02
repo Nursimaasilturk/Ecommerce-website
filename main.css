@@ -13,7 +13,7 @@
 }
 header {
   width: 100%;
-  height: 13vh;
+  height: 10%;
   background-color: rgb(94, 241, 170);
   display: flex;
   justify-content: space-between;
@@ -25,14 +25,20 @@ header {
   top: 0;
   left: 0;
 }
-.categories ul {
+.categories {
+  width: 70%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+.categories ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .categories ul li {
   list-style: none;
-  padding: 2rem;
 }
 .categories ul li a {
   position: relative;
@@ -57,14 +63,22 @@ header {
   left: 3%;
 }
 header .logo {
+  width: 20%;
   font-family: "Great Vibes", cursive;
   font-size: 2rem;
   font-weight: 600;
   color: rgb(36, 85, 50);
 }
+#mobile {
+  display: none;
+  align-items: center;
+}
+#close {
+  display: none;
+}
 #hero {
   background-image: url("./img/feature/eye-for-ebony-N37if_OpluQ-unsplash.jpg");
-  height: 90vh;
+  height: 90vw;
   width: 100%;
   background-size: cover;
   background-position: top 0 right 40%;
@@ -369,7 +383,7 @@ header .logo {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1008%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(2%2c 156%2c 252%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c438.743C86.992%2c449.596%2c173.367%2c429.667%2c253.959%2c395.168C346.209%2c355.678%2c465.328%2c322.045%2c495.891%2c226.466C526.976%2c129.254%2c413.578%2c43.646%2c398.647%2c-57.317C383.812%2c-157.631%2c478.92%2c-280.889%2c409.876%2c-355.159C339.98%2c-430.346%2c209.879%2c-353.423%2c108.48%2c-369.448C25.093%2c-382.627%2c-46.45%2c-456.562%2c-129.305%2c-440.371C-213.684%2c-423.882%2c-273.702%2c-350.87%2c-327.942%2c-284.164C-380.861%2c-219.084%2c-435.389%2c-146.614%2c-436.367%2c-62.74C-437.312%2c18.36%2c-372.186%2c81.062%2c-333.028%2c152.089C-297.174%2c217.123%2c-272.543%2c288.058%2c-216.259%2c336.505C-154.578%2c389.597%2c-80.758%2c428.668%2c0%2c438.743' fill='%23027dca'%3e%3c/path%3e%3cpath d='M1440 1098.271C1542.715 1087.893 1642.225 1065.462 1731.287 1013.251 1823.1109999999999 959.4200000000001 1905.357 889.26 1956.1190000000001 795.704 2009.068 698.116 2061.235 580.337 2022.6660000000002 476.225 1984.259 372.55 1838.214 361.222 1764.6019999999999 278.731 1692.7 198.156 1697.725 57.10300000000001 1602.7649999999999 5.673999999999978 1506.275-46.583999999999946 1374.579-39.841999999999985 1280.414 16.499000000000024 1189.087 71.142 1189.833 203.038 1128.057 289.7 1074.509 364.82 974.625 401.699 943.836 488.66200000000003 910.501 582.816 926.819 685.884 953.7370000000001 782.069 984.201 890.9259999999999 1013.495 1014.575 1108.26 1076.1979999999999 1203.09 1137.863 1327.4569999999999 1109.642 1440 1098.271' fill='%2333b0fd'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1008'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='100%' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1008%26quot%3b)' fill='none'%3e%3crect width='100%' height='560' x='0' y='0' fill='rgba(2%2c 156%2c 252%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c438.743C86.992%2c449.596%2c173.367%2c429.667%2c253.959%2c395.168C346.209%2c355.678%2c465.328%2c322.045%2c495.891%2c226.466C526.976%2c129.254%2c413.578%2c43.646%2c398.647%2c-57.317C383.812%2c-157.631%2c478.92%2c-280.889%2c409.876%2c-355.159C339.98%2c-430.346%2c209.879%2c-353.423%2c108.48%2c-369.448C25.093%2c-382.627%2c-46.45%2c-456.562%2c-129.305%2c-440.371C-213.684%2c-423.882%2c-273.702%2c-350.87%2c-327.942%2c-284.164C-380.861%2c-219.084%2c-435.389%2c-146.614%2c-436.367%2c-62.74C-437.312%2c18.36%2c-372.186%2c81.062%2c-333.028%2c152.089C-297.174%2c217.123%2c-272.543%2c288.058%2c-216.259%2c336.505C-154.578%2c389.597%2c-80.758%2c428.668%2c0%2c438.743' fill='%23027dca'%3e%3c/path%3e%3cpath d='M1440 1098.271C1542.715 1087.893 1642.225 1065.462 1731.287 1013.251 1823.1109999999999 959.4200000000001 1905.357 889.26 1956.1190000000001 795.704 2009.068 698.116 2061.235 580.337 2022.6660000000002 476.225 1984.259 372.55 1838.214 361.222 1764.6019999999999 278.731 1692.7 198.156 1697.725 57.10300000000001 1602.7649999999999 5.673999999999978 1506.275-46.583999999999946 1374.579-39.841999999999985 1280.414 16.499000000000024 1189.087 71.142 1189.833 203.038 1128.057 289.7 1074.509 364.82 974.625 401.699 943.836 488.66200000000003 910.501 582.816 926.819 685.884 953.7370000000001 782.069 984.201 890.9259999999999 1013.495 1014.575 1108.26 1076.1979999999999 1203.09 1137.863 1327.4569999999999 1109.642 1440 1098.271' fill='%2333b0fd'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1008'%3e%3crect width='100%' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   background-size: cover;
   background-position: top 0;
   padding: 1rem;
@@ -422,6 +436,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 3rem;
+  margin-bottom: 3rem;
 }
 footer .col {
   display: flex;
@@ -495,23 +510,183 @@ footer .copyright {
   text-align: center;
   font-weight: 200;
 }
-
 @media (max-width: 799px) {
-  * {
-    font-size: 10px;
-  }
-  .categories {
+  .categories ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: -300px;
     height: 100vh;
-    width: 300px;
-    background-color: #d2fada;
-    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
-    padding: 80px 0 0 20px;
+    width: 35%;
+    background-color: rgb(94, 241, 170);
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.4);
+    padding: 5rem 0 0 3rem;
+    transition: 0.3s;
+  }
+  .categories ul.active {
+    right: 0px;
+  }
+  .categories ul li {
+    margin-bottom: 1.5rem;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile span {
+    color: rgb(36, 85, 50);
+    font-size: 1.5rem;
+    padding-left: 1.3rem;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-size: 1.5rem;
+    color: rgb(36, 85, 50);
+  }
+  #shopping {
+    display: none;
+  }
+  #hero {
+    height: 70vw;
+    background-position: top 30% right 30%;
+  }
+  #hero button {
+    width: 15%;
+    height: 10%;
+    font-size: 14px;
+    border-radius: 0.4rem;
+  }
+  #feature {
+    justify-content: center;
+    height: 75vh;
+  }
+  #feature .fe-box {
+    margin: 15px 15px;
+    width: 30%;
+    height: 30%;
+  }
+  #fe-products .pro-container {
+    justify-content: center;
+  }
+  #fe-products .pro {
+    width: 40%;
+    margin-right: 2rem;
+  }
+  #banner {
+    height: 30vh;
+  }
+  #sm-banner .banner-box {
+    min-width: 90%;
+    height: 40vh;
+  }
+  #text-banner .banner-box {
+    font-size: 1rem;
+    width: 28%;
+    height: 20vh;
+  }
+  #text-banner .banner-box h2 {
+    font-size: 1.3rem;
+  }
+  #text-banner .banner-box h3 {
+    font-size: 1rem;
+  }
+  #newsletter .form {
+    width: 70%;
+  }
+  footer .col.first h2 {
+    font-size: 3rem;
+  }
+  footer .col.second {
+    justify-content: flex-end;
+  }
+  footer .col.install {
+    width: 70%;
+  }
+  footer .col.install img {
+    width: 15vh;
+    height: 6vh;
+  }
+}
+@media (max-width: 477px) {
+  * {
+    font-size: 12px;
+  }
+  #close {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+  #hero {
+    height: 50vh;
+    background-position: 55%;
+  }
+
+  #hero button {
+    width: 25%;
+    height: 10%;
+    border: 2px solid rgb(75, 151, 115);
+    font-size: 1rem;
+  }
+  #feature {
+    justify-content: center;
+    height: auto;
+    font-size: 15px;
+  }
+  #feature .fe-box {
+    width: 40%;
+    height: 24vh;
+  }
+  #fe-products .pro-container {
+    justify-content: center;
+  }
+  #fe-products .pro {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  #banner {
+    height: 40vh;
+    background-position: center;
+  }
+  #banner h2 {
+    font-size: 2rem;
+  }
+  #banner h2 span {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  #banner button {
+    width: 30%;
+    height: 17%;
+    margin-top: 1.5rem;
+  }
+  #sm-banner .banner-box {
+    height: 50vh;
+  }
+  #sm-banner button {
+    width: 30%;
+    height: 15%;
+  }
+  #sm-banner .banner-box.box-2 {
+    margin-top: 1rem;
+  }
+  #text-banner .banner-box {
+    font-size: 1rem;
+    width: 100%;
+    height: 40vh;
+  }
+  #text-banner .banner-box h2 {
+    font-size: 2rem;
+  }
+  #text-banner .banner-box h3 {
+    font-size: 1.5rem;
+  }
+  #newsletter .form {
+    width: 100%;
   }
 }
