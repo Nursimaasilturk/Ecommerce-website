@@ -628,6 +628,74 @@ footer .copyright {
 #pro-details .single-pro-details p {
   font-weight: 300;
 }
+/* Blog Page Start*/
+#page-header.blog-header {
+  background-image: url("./img/blog/blog.jpg");
+}
+#page-header.blog-header .header-content h2 span,
+#page-header.blog-header .header-content p span {
+  background-color: green;
+}
+#blog {
+  padding: 120px 120px 0 120px;
+}
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 15vh;
+}
+#blog .blog-box--image {
+  width: 50%;
+  margin-right: 4rem;
+}
+#blog .blog-box--image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#blog .blog-box--details {
+  width: 50%;
+}
+#blog .blog-box--details h4 {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  color: rgb(94, 241, 170);
+}
+#blog .blog-box--details p {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+#blog .blog-box--details a {
+  text-decoration: none;
+  color: rgb(12, 65, 62);
+  font-size: 0.7rem;
+  position: relative;
+  transition: 0.4s;
+}
+#blog .blog-box--details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: rgb(12, 65, 62);
+  position: absolute;
+  top: 9px;
+  right: -60px;
+}
+#blog .blog-box--details a:hover {
+  color: rgb(94, 241, 170);
+}
+#blog .blog-box h2 {
+  position: absolute;
+  top: -63px;
+  left: 0;
+  font-weight: 700;
+  font-size: 4rem;
+  color: green;
+  opacity: 0.4;
+  z-index: -9;
+}
 @media (max-width: 799px) {
   .categories ul {
     display: flex;
@@ -739,6 +807,9 @@ footer .copyright {
   #pro-details .single-pro-details button {
     width: 30%;
   }
+  #pagination a {
+    width: 10%;
+  }
 }
 @media (max-width: 477px) {
   * {
@@ -838,5 +909,29 @@ footer .copyright {
   }
   #pro-details .single-pro-details button {
     width: 30%;
+  }
+  /* Blog Page*/
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog .blog-box--image {
+    width: 100%;
+    margin-right: 0;
+  }
+  #blog .blog-box h2 {
+    position: absolute;
+    top: -45px;
+    left: 0;
+  }
+  #blog .blog-box--details {
+    width: 100%;
+  }
+  #pagination a {
+    width: 10%;
   }
 }
